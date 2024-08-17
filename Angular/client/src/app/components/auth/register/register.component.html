@@ -1,0 +1,53 @@
+<section class="container">
+  <h1 class="large text-primary">Sign Up</h1>
+  <p class="lead"><i class="fas fa-user"></i> Create Your Account</p>
+  <form class="form" (ngSubmit)="registerSubmit()">
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="EmpID"
+        name="empId"
+        [(ngModel)]="emp.empID"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="FirstName"
+        name="firstName"
+        [(ngModel)]="emp.empFirstName"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="LastName"
+        name="lastName"
+        [(ngModel)]="emp.empLastName"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="number"
+        placeholder="salary"
+        name="salary"
+        [(ngModel)]="emp.salary"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        placeholder="address"
+        name="address"
+        [(ngModel)]="emp.address"
+        required
+      />
+    </div>
+    <input type="submit" class="btn btn-primary" value="Register" />
+  </form>
+  <p class="my-1">Already have an account? <a href="login.html">Sign In</a></p>
+</section>
